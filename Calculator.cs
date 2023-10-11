@@ -1,25 +1,26 @@
-namespace ProGitForProgrammers
+namespace UtilityKnife.Calculator
 {
-    public class Calculator
+    public static class Calculator
     {
-        public int Add(int left, int right)
+        public static double Add(double x, double y)
         {
-            return left + right;
+            return x + y;
         }
-
-        public int Subtract(int left, int right)
+        public static double Subtract(double x, double y)
         {
-            return left - right;
+            return x - y;
         }
-
-        public int Multiply(int left, int right)
+        public static double Multiply(double x, double y)
         {
-            return left * right;
+            return x * y;
         }
-        
-        public int Divide(int left, int right)
+        public static int Division (int x, int y)
         {
-            return left / right;
+            return x / y;
+        }
+        public static double Division (double x, double y)
+        {
+            return x / y;
         }
     }
 }
