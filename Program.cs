@@ -1,13 +1,14 @@
-namespace ProGitForProgrammers
+using System;
+using UtilityKnife.Converters;
+namespace UtilityKnife
 {
-    class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("I just added this in Visual Studio");
-            Console.WriteLine("I just added this in the command line repo");
-            Console.WriteLine("This commit is to show the staging area");
+            var converter = new FahrenheitToCelsius();
+            var celsius = converter.FahrenheitToCelsiusConverter(212.0);
+            Console.WriteLine($"Fahrenheit temp of 212 is {celsius}.");
         }
     }
 }
